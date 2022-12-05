@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Safe Content</title>
+</head>
+<body onload="onInitAdmin()">
+    <div class="user-bar">
+        <h1>Hi,</h1>
+        <img class="user-img" src="/imgs/1.jpg" alt="userImg">
+        <h2 class="username"></h2>
+        <a class="logout" href="index.html"><button onclick="onLogOut()" class="log-btn">Logout</button></a>
+        <a class="admin-link hidden" href="admin.html"><button class="admin-btn">Admin</button></a>
+    </div>
+
+    <section class="content-wrapper">
+        <h1>Admin panel</h1>
+        <section class="users-filter">
+            <select onchange="onSetSort(this.value)">
+                <option value="name">Name</option>
+                <option value="lastLogin">Last Login</option>
+            </select>
+        </section>
+        <table class="users">
+            <thead>
+                <tr>
+                    <td>Img</td>
+                    <td>Username</td>
+                    <td>Password</td>
+                    <td>Last login</td>
+                    <td>Admin</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/user-service.js"></script>
+    <script src="js/controller.js"></script>
+
+</body>
+</html>

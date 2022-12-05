@@ -1,0 +1,172 @@
+body {
+    background-color: lightseagreen;
+    font-family: tahoma;
+    color: #111;
+    color: white;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a{
+    color: #fff;
+}
+a,button{
+    cursor: pointer;
+}
+.user-bar{
+    background-color: #fff;
+    color: #111;
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    gap: 5px;
+}
+.user-bar h1{
+    font-size: 1em;
+    background-color: lightseagreen;
+    color: #fff;
+    padding: .5em;
+    border-radius: .33em;
+    display: none;
+    /* margin-right: 1em; */
+}
+.username{
+    font-size: 1em;
+}
+.login-wrapper{
+    position: absolute;
+    inset: 0;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    height: 50vh;
+    padding: 0px 5em;
+}
+.content-wrapper{
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+}
+img{
+    border-radius: 12px;
+    width: 33%;
+    margin: 2em 0;
+}
+button,input{
+    padding: .75em;
+    border-radius: .33em;
+    border-radius: .33em;
+}
+h1{
+    font-size: 2.25em;
+}
+input{
+    margin-bottom: 10px;
+    border: 1px solid #e6e6e6;
+    transition: border 0.5s;
+}
+input:focus{
+    outline: none;
+    border: 1px solid lightseagreen;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 1.5em 1.5em;
+    border-radius: .33em;
+    width: 100%;
+}
+label{
+    margin-bottom: 10px;
+    font-size: .9em;
+    color: rgb(2, 151, 144);
+}
+button{
+    margin-top: .33em;
+    border: none;
+    transition: all 0.2s ease-out;
+}
+button:hover{
+    background-color: rgb(0, 129, 124);
+    color: white;
+}
+select{
+    margin-top: 10px;
+    border-radius: .33em;
+    padding: .5em 1em;
+    border:none;
+}
+.user-img{
+    width: 2em;
+    height: 2em;
+    object-fit: cover;
+    margin: 0;
+}
+
+.logout{
+    margin-left: auto;
+    margin-right: .25em;
+}
+.log-btn{
+    background-color: rgb(223, 85, 85);
+    color: #fff;
+}
+
+.wrong{
+    border:1px solid red;
+}
+
+.hidden{
+    display: none;
+}
+
+.users{
+    margin: 1em;
+    padding: .25em;
+    border-collapse: separate;
+    border-spacing: .25em;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.377);
+    border-radius: .25em;
+}
+
+tr td{
+    position: relative;
+    padding: 1em;
+    border-radius: .33em;
+    /* width: 4em; */
+    height: 4em;
+}
+
+tbody tr td{
+    color: rgb(0, 129, 124);
+    background-color: rgb(255, 255, 255);
+}
+
+thead tr td{
+    background-color: rgb(0, 129, 124);
+}
+.user-img-admin-panel{
+    position: absolute;
+    inset: 0;
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+    object-position: center;
+    margin: auto;
+}
